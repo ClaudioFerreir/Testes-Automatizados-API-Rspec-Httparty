@@ -8,6 +8,6 @@ module Contato
           'Content-Type': 'application/json'
 end
 
-# toda vez que eu chamar este modulo a url padrao dele sera 'https://api-de-tarefas.herokuapp.com'
+# toda vez que eu chamar este modulo a url padrao dele sera 'https://localhost:3000'
 # e ele tera o headers com a opcoes Accept: 'application/vdn.tasksmanager.v2', 'Content-Type': 'application/json'
 # e sera do formato json
