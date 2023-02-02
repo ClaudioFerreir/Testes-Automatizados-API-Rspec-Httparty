@@ -3,6 +3,11 @@ require 'httparty/request'
 require 'httparty/response/headers'
 require 'faker'
 
+# carrega o arquivo que esta neste caminho
+@rspec_yml = YAML.load_file("#{Dir.pwd}/support/rspec.yml") #arquivo de configuracao que eu quero usar e coloca os parametros para o que vc quer setar
+@ambiente = @rspec_yml['ambiente'] #parametro especifico para o ambiente que desejamos pode ser tb o browser especifico, user e etc
+CONFIG = YAML.load_file("#{Dir.pwd}/support/data/#{@ambiente}.yml") #arquivo que queremos carregar as opcoes
+
 # referencia de onde esta o arquivo com o modulo Contato
 require_relative '../services/contatos_service.rb'
 require_relative '../services/criar_service.rb'

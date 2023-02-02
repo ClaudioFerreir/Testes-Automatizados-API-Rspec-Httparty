@@ -283,21 +283,21 @@ a {
   <dl style="margin-left: 0px;">
   <dt id="example_group_1" class="passed">fazer requisicao</dt>
     <script type="text/javascript">moveProgressBar('14.2');</script>
-    <dd class="example passed"><span class="passed_spec_name">delete</span><span class='duration'>0.15612s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">delete</span><span class='duration'>0.06583s</span></dd>
   </dl>
 </div>
 <div id="div_group_2" class="example_group passed">
   <dl style="margin-left: 0px;">
   <dt id="example_group_2" class="passed">fazer uma requisição</dt>
     <script type="text/javascript">moveProgressBar('28.5');</script>
-    <dd class="example passed"><span class="passed_spec_name">get</span><span class='duration'>0.08645s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">get</span><span class='duration'>0.00990s</span></dd>
   </dl>
 </div>
 <div id="div_group_3" class="example_group passed">
   <dl style="margin-left: 0px;">
   <dt id="example_group_3" class="passed">fazer um requisição</dt>
     <script type="text/javascript">moveProgressBar('42.8');</script>
-    <dd class="example passed"><span class="passed_spec_name">post</span><span class='duration'>0.09062s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">post</span><span class='duration'>0.01612s</span></dd>
   </dl>
 </div>
 <div id="div_group_4" class="example_group passed">
@@ -309,48 +309,27 @@ a {
   <dl style="margin-left: 15px;">
   <dt id="example_group_5" class="passed">para alterar dados com</dt>
     <script type="text/javascript">moveProgressBar('57.1');</script>
-    <dd class="example passed"><span class="passed_spec_name">put</span><span class='duration'>0.13231s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">put</span><span class='duration'>0.01701s</span></dd>
     <script type="text/javascript">moveProgressBar('71.4');</script>
-    <dd class="example passed"><span class="passed_spec_name">patch</span><span class='duration'>0.06120s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">patch</span><span class='duration'>0.03974s</span></dd>
   </dl>
 </div>
 <div id="div_group_6" class="example_group passed">
   <dl style="margin-left: 0px;">
   <dt id="example_group_6" class="passed">usando</dt>
     <script type="text/javascript">moveProgressBar('85.7');</script>
-    <dd class="example passed"><span class="passed_spec_name">token</span><span class='duration'>9.02189s</span></dd>
+    <dd class="example passed"><span class="passed_spec_name">token</span><span class='duration'>3.53927s</span></dd>
   </dl>
 </div>
 <div id="div_group_7" class="example_group passed">
   <dl style="margin-left: 0px;">
   <dt id="example_group_7" class="passed">fazer uma requisição</dt>
-    <script type="text/javascript">makeRed('rspec-header');</script>
-    <script type="text/javascript">makeRed('div_group_7');</script>
-    <script type="text/javascript">makeRed('example_group_7');</script>
     <script type="text/javascript">moveProgressBar('100.0');</script>
-    <dd class="example failed">
-      <span class="failed_spec_name">get</span>
-      <span class="duration">0.10047s</span>
-      <div class="failure" id="failure_1">
-        <div class="message"><pre>  Failure/Error: [0m[32mexpect[0m(@melhor_opcao.parsed_response[[31m[1;31m&#39;[0m[31mdata[1;31m&#39;[0m[31m[0m][[31m[1;31m&#39;[0m[31mattributes[1;31m&#39;[0m[31m[0m][[31m[1;31m&#39;[0m[31mage[1;31m&#39;[0m[31m[0m]).to eq [1;34m29[0m
-
-    expected: 29
-         got: 28
-
-    (compared using ==)
-  # ./spec/validando_respostas_spec.rb:12:in `block (2 levels) in &lt;top (required)&gt;&#39;</pre></div>
-        <div class="backtrace"><pre>./spec/validando_respostas_spec.rb:12:in `block (2 levels) in &lt;top (required)&gt;&#39;</pre></div>
-    <pre class="ruby"><code><span class="linenum">10</span>    <span class="keyword">expect</span>(<span class="instance-variable">@melhor_opcao</span>.parsed_response[<span class="string"><span class="delimiter">'</span><span class="content">data</span><span class="delimiter">'</span></span>][<span class="string"><span class="delimiter">'</span><span class="content">attributes</span><span class="delimiter">'</span></span>][<span class="string"><span class="delimiter">'</span><span class="content">last-name</span><span class="delimiter">'</span></span>]).to eq <span class="string"><span class="delimiter">'</span><span class="content">batista 1</span><span class="delimiter">'</span></span>
-<span class="linenum">11</span>    <span class="keyword">expect</span>(<span class="instance-variable">@melhor_opcao</span>.parsed_response[<span class="string"><span class="delimiter">'</span><span class="content">data</span><span class="delimiter">'</span></span>][<span class="string"><span class="delimiter">'</span><span class="content">attributes</span><span class="delimiter">'</span></span>][<span class="string"><span class="delimiter">'</span><span class="content">email</span><span class="delimiter">'</span></span>]).to eq <span class="string"><span class="delimiter">'</span><span class="content">bruno01@gmail.com</span><span class="delimiter">'</span></span>
-<span class="offending"><span class="linenum">12</span>    <span class="keyword">expect</span>(<span class="instance-variable">@melhor_opcao</span>.parsed_response[<span class="string"><span class="delimiter">'</span><span class="content">data</span><span class="delimiter">'</span></span>][<span class="string"><span class="delimiter">'</span><span class="content">attributes</span><span class="delimiter">'</span></span>][<span class="string"><span class="delimiter">'</span><span class="content">age</span><span class="delimiter">'</span></span>]).to eq <span class="integer">29</span></span>
-<span class="linenum">13</span>  <span class="keyword">end</span>
-<span class="linenum">14</span><span class="keyword">end</span></code></pre>
-      </div>
-    </dd>
+    <dd class="example passed"><span class="passed_spec_name">get</span><span class='duration'>0.03812s</span></dd>
   </dl>
 </div>
-<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>10.07647 seconds</strong>";</script>
-<script type="text/javascript">document.getElementById('totals').innerHTML = "7 examples, 1 failure";</script>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>3.76115 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "7 examples, 0 failures";</script>
 </div>
 </div>
 </body>
