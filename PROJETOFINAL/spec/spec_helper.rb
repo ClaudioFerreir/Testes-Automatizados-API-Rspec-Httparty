@@ -2,10 +2,15 @@ require 'httparty'
 require 'httparty/request'
 require 'httparty/response/headers'
 
-require_relative '..services/login_service.rb'
+require_relative '../services/login_service.rb'
+require_relative '../services/cadastrar_service.rb'
 
 RSpec.configure do |config|
   include Login
+  include Cadastrar
+  
+  config.color = true
+  config.formatter = :documentation
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
